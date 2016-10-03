@@ -24,10 +24,8 @@
 ::after {
 	background-repeat: no-repeat;   /* 1 */
 	box-sizing: inherit;            /* 2 */
-	-ms-flex-flow: column;
-	    flex-flow: column;          /* 3 */
-	-ms-flex-negative: 0;
-	    flex-shrink: 0;             /* 4 */
+	flex-flow: column;              /* 3 */
+    flex-shrink: 0;                 /* 4 */
 	position: relative;             /* 5 */
 }
 
@@ -63,19 +61,6 @@ html {
 }
 
 
-/*----------------------------------------------------------------------------*\
-	Hide hidden elements for slightly improved rendeering (opinionated).
-\*----------------------------------------------------------------------------*/
-
-head,
-link,
-meta,
-script,
-style,
-template,
-title {
-    display: none;
-}
 
 /*----------------------------------------------------------------------------*\
 	Remove the margin in all browsers (opinionated).
@@ -83,7 +68,6 @@ title {
 
 body {
 	margin: 0;
-	overflow: auto;
 }
 
 
@@ -453,6 +437,17 @@ button,
 
 
 /*----------------------------------------------------------------------------*\
+	Add the correct display in IE 10-.
+\*----------------------------------------------------------------------------*/
+
+template,
+[hidden] {
+	display: none;
+}
+
+
+
+/*----------------------------------------------------------------------------*\
 	Correct the focus styles unset by the previous rule.
 \*----------------------------------------------------------------------------*/
 
@@ -521,16 +516,6 @@ button,
 
 a:hover {
 	outline-width: 0;
-}
-
-
-
-/*----------------------------------------------------------------------------*\
-	Add the correct display in IE 10-.
-\*----------------------------------------------------------------------------*/
-
-[hidden] {
-	display: none;
 }
 
 
