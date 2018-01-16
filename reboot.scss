@@ -12,18 +12,25 @@
 \*----------------------------------------------------------------------------*/
  
 /*----------------------------------------------------------------------------*\
-    1. Remove repeating backgrounds, set background position to center and
-       background size to cover in all browsers (opinionated).
-    2. Add box sizing inheritence in all browsers (opinionated).
-    3. Add relative positioning (opinionated).
+    1. Set background size to cover in all browsers (opinionated).
+    2. Remove repeating backgrounds in all browsers (opinionated).
+    3. Set background position to center apart from to pseudos (opinionated).
+    4. Add box sizing inheritence in all browsers (opinionated).
+    5. Add relative positioning (opinionated).
 \*----------------------------------------------------------------------------*/
+
+
+* {
+    background-size: cover;                         /* 1 */
+}
 
 *,
 ::before,
 ::after {
-    background: no-repeat center / cover;           /* 1 */
-    box-sizing: inherit;                            /* 2 */
-    position: relative;                             /* 3 */
+    background-repeat: no-repeat;                   /* 2 */
+    background-position: center;                    /* 3 */
+    box-sizing: inherit;                            /* 4 */
+    position: relative;                             /* 5 */
 }
 
 
