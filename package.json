@@ -1,0 +1,37 @@
+{
+  "name": "reboot",
+  "version": "1.2",
+  "license": "MIT",
+  "description": "The Creative Little Reboot is an opionated style reset supporting modern browsers and IE11 😒",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creativelittledots/reboot.css"
+  },
+  "author": "Matt Pilott",
+  "bugs": {
+    "url": "https://github.com/creativelittledots/reboot.css/issues"
+  },
+  "homepage": "https://github.com/creativelittledots/reboot.css#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.2.3",
+    "node-sass": "^4.7.2",
+    "onchange": "^3.3.0",
+    "postcss-cli": "^4.1.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "Firefox ESR",
+    "iOS 9",
+    "not ie_mob <= 12",
+    "not ie <= 10",
+    "not blackberry <= 7"
+  ],
+  "scripts": {
+    "scss": "node-sass --omit-source-map-url --output-style compressed reboot.scss reboot.css",
+    "autoprefixer": "postcss --use autoprefixer --replace ./reboot.css --no-map",
+    "build": "yarn run scss --silent && yarn run autoprefixer --silent",
+    "watch": "onchange './*.scss' -- yarn run build --silent",
+    "postinstall": "yarn run watch --silent"
+  }
+}
