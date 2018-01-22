@@ -10,11 +10,11 @@ As has been stipulated (and quite rightly so) by my good friend and colleague [@
 
 A reset in it's purest form is a way to level the browser playing field, attempting to ensure that each browser displays all standardised elements the same. Although that sounds fairly trivial, in practice it is quite time consuming and requries you to check every element in a variety of situations to ensure you haven't added strange issues.
 
-The idea of course is to simplify the life of web folk not infuriate them with oddities. This reset is based on normalize which offers us that level playing field, it has then been carefully expanded and altered for more modern front-end best practice. For example we user border-box in most cases, we also set position relative and switch off background repeat. These are micro wins and come from numerous discussions around the web, especially the sanitize.css issues section.
+The idea of course is to simplify the life of web folk not infuriate them with oddities. This reset is based on normalize which offers us that level playing field, it has then been carefully expanded and altered for more modern front-end best practices. For example we use `box-sizing: border-box;` in most cases, we also set `position: relative;` and switch off background repeat. These are micro wins and come from numerous discussions around the web, especially the sanitize.css issues section.
 
-Changes are loosely set at the top level and inherited by children of `<html>` and `<body>`. This makes it easy to override and changeable in one place.
+These opinionated changes are loosely set at the top level and inherited by children of `<html>` and `<body>`. This makes them easy to override and change in one place.
 
-The sheet itself does trend toward being more specific at the end, which at the very least pleases me personally.
+The sheet itself does trend toward being more specific at the end, which at the very least pleases me personally. ([See CSS Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity))
 
 - - -
 
