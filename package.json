@@ -30,8 +30,8 @@
   "scripts": {
     "scss": "node-sass --omit-source-map-url --output-style compressed reboot.scss reboot.css",
     "autoprefixer": "postcss --use autoprefixer --replace ./reboot.css --no-map",
-    "build": "yarn run scss --silent && yarn run autoprefixer --silent",
-    "watch": "onchange './*.scss' -- yarn run build --silent",
-    "postinstall": "yarn run watch --silent"
+    "build": "npm run scss --silent && npm run autoprefixer --silent",
+    "watch": "onchange './*.scss' -- npm run build --silent",
+    "postinstall": "npm run watch --silent"
   }
 }
