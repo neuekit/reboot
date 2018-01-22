@@ -24,7 +24,7 @@ To fork the project and make changes so that you can help shape reboot simply do
 Download the repo or open terminal, change to the directory where your projects are stored (`cd`) and run `git clone https://github.com/creativelittledots/reboot.css.git`.
 
 ## Step 2:
-This project uses npm and can be setup using either npm or yarn.
+This project uses npm and can be setup using either npm or yarn. Simply `cd` into the newly created directory and run
 `$ npm install` or `$ yarn`
 
 ## Step 3:
