@@ -2,7 +2,7 @@
 
     #REBOOT BROWSER STYLES
 
-    - Version:      1.2
+    - Version:      1.3
     - Author:       Creative Little Dots
     - Site:         http://creativelittle.uk/reboot
     - Copyright:    2018, Creative Little Dots
@@ -52,21 +52,20 @@
     1. Add border box sizing in all browsers (opinionated).
     2. Add the default cursor in all browsers (opinionated).
     3. Add a flattened line height in all browsers (opinionated).
-    4. Prevent font size adjustments after orientation changes in IE and iOS.
+    4. Prevent font size adjustments after orientation changes in iOS.
 \*----------------------------------------------------------------------------*/
 
 html {
     box-sizing: border-box;             /* 1 */
     cursor: default;                    /* 2 */
     line-height: 1.75;                  /* 3 */
-    -ms-text-size-adjust: 100%;         /* 4 */
     -webkit-text-size-adjust: 100%;     /* 4 */
 }
 
 
 
 /*----------------------------------------------------------------------------*\
-    Remove the margin in all browsers (opinionated).
+    Remove the margin in all browsers.
 \*----------------------------------------------------------------------------*/
 
 body,
@@ -77,11 +76,10 @@ optgroup {
 
 
 /*----------------------------------------------------------------------------*\
-    1. Add correct display in Edge, IE, & Firefox.
+    Add the correct display in Edge, IE 10+, and Firefox.
 \*----------------------------------------------------------------------------*/
 
-details,    /* 1 */
-menu {      /* 1 */
+details {
     display: block;
 }
 
@@ -154,16 +152,6 @@ hr {
 b,
 strong {
     font-weight: bolder;
-}
-
-
-
-/*----------------------------------------------------------------------------*\
-    Add the correct font style in Android 4.3-.
-\*----------------------------------------------------------------------------*/
-
-dfn {
-    font-style: italic;
 }
 
 
@@ -306,7 +294,7 @@ legend {
 
 
 /*----------------------------------------------------------------------------*\
-    1. Remove the vertical scrollbar in IE.
+    1. Remove the vertical scrollbar in IE 10+.
     2. Change the resize direction on textareas in all browsers (opinionated).
 \*----------------------------------------------------------------------------*/
 
@@ -332,7 +320,6 @@ textarea {
     Remove the inner padding and cancel buttons in Chrome and Safari for macOS.
 \*----------------------------------------------------------------------------*/
 
-::-webkit-search-cancel-button,
 ::-webkit-search-decoration {
     -webkit-appearance: none;
 }
@@ -437,16 +424,14 @@ select { /* 1 */
 
 
 /*----------------------------------------------------------------------------*\
-    1. Prevent the WebKit bug where (2) destroys native `audio` and `video`
-       controls in Android 4.
-    2. Correct the inability to style clickable types in iOS and Safari.
+    Correct the inability to style clickable types in iOS and Safari.
 \*----------------------------------------------------------------------------*/
 
 button,
-[type="button"],                    /* 1 */
+[type="button"],
 [type="reset"],
 [type="submit"] {
-    -webkit-appearance: button;     /* 2 */
+    -webkit-appearance: button;
 }
 
 
@@ -533,16 +518,6 @@ abbr[title] {
 nav ol,
 nav ul {
     list-style: none;
-}
-
-
-
-/*----------------------------------------------------------------------------*\
-    Hide the overflow in IE.
-\*----------------------------------------------------------------------------*/
-
-svg:not(:root) {
-    overflow: hidden;
 }
 
 
