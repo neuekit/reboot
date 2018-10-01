@@ -1,5 +1,5 @@
 {
-  "name": "reboot",
+  "name": "@cld/reboot",
   "version": "1.3.0",
   "license": "MIT",
   "description": "The Creative Little Reboot is an opionated style reset supporting modern browsers and IE11 😒",
