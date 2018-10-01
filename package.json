@@ -1,5 +1,5 @@
 {
-  "name": "@cld/reboot",
+  "name": "@creativelittledots/reboot",
   "version": "1.3.0",
   "license": "MIT",
   "description": "The Creative Little Reboot is an opionated style reset supporting modern browsers and IE11 😒",
@@ -12,6 +12,9 @@
     "url": "https://github.com/creativelittledots/reboot.css/issues"
   },
   "homepage": "https://github.com/creativelittledots/reboot.css#readme",
+  "publishConfig": {
+      "access": "public"
+  },
   "devDependencies": {
     "autoprefixer": "^9.1.5",
     "node-sass": "^4.7.2",
