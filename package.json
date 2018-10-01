@@ -15,7 +15,7 @@
   "devDependencies": {
     "autoprefixer": "^9.1.5",
     "node-sass": "^4.7.2",
-    "onchange": "^4.1.0",
+    "onchange": "^5.0.0",
     "postcss-cli": "^6.0.0"
   },
   "browserslist": [
