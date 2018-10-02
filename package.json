@@ -31,6 +31,6 @@
     "autoprefixer": "postcss --use autoprefixer --replace ./reboot.css --no-map",
     "build": "npm run scss --silent && npm run autoprefixer --silent",
     "start": "onchange './*.scss' -- npm run build --silent",
-    "postinstall": "npm run watch --silent"
+    "postinstall": "npm run start --silent"
   }
 }
