@@ -1,6 +1,6 @@
 {
   "name": "@creativelittledots/reboot",
-  "version": "1.3.2",
+  "version": "1.4.0",
   "license": "MIT",
   "description": "The Creative Little Reboot is an opionated style reset supporting modern browsers and IE11 😒",
   "repository": {
@@ -13,18 +13,18 @@
   },
   "homepage": "https://github.com/creativelittledots/reboot.css#readme",
   "publishConfig": {
-      "access": "public"
+    "access": "public"
   },
   "devDependencies": {
-    "autoprefixer": "^9.1.5",
-    "node-sass": "^4.7.2",
-    "onchange": "^5.0.0",
-    "postcss-cli": "^6.0.0"
+    "autoprefixer": "^9.4.7",
+    "node-sass": "^4.11.0",
+    "onchange": "^5.2.0",
+    "postcss-cli": "^6.1.1"
   },
   "browserslist": [
     ">0.5%",
     "not op_mini all",
-    "not android <= 4.4.4"
+    "not android < 4.4.4"
   ],
   "scripts": {
     "scss": "node-sass --omit-source-map-url --output-style compressed reboot.scss reboot.css",
