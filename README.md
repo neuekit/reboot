@@ -26,14 +26,14 @@ Download the repo or open terminal, change to the directory where your projects 
 
 ## Step 2:
 This project uses npm and can be setup using either npm or yarn. Simply `cd` into the newly created directory and run
-`$ npm install` or `$ yarn`
+`$ npm install`
 
 ## Step 3:
-After running one of the above commands the dependencies will install and it will start watching for changes to the scss file. To do this after install run either `$ npm run watch` or `$ yarn run watch`
+After running one of the above commands the dependencies will install and it will start watching for changes to the scss file. To do this after install run either `$ npm run watch`
 
 ## Commands
-To build the project manually run either `$ npm run build` or `$ yarn run build`
-To watch for changes manually run either `$ npm run watch` or `$ yarn run watch`
+To build the project manually run either `$ npm run build`
+To watch for changes manually run either `$ npm run watch`
 
 ## Future
 Although the gains aren't massive version 2 of reboot will drop support for the dreaded Internet Explorer and v1 will be maintained as the legacy branch until Mircrosoft kills it. 
