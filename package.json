@@ -1,6 +1,6 @@
 {
   "name": "@creativelittledots/reboot",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "license": "MIT",
   "description": "The Creative Little Reboot is an opionated style reset supporting modern browsers and IE11 😒",
   "repository": {
@@ -21,11 +21,6 @@
     "onchange": "6.0.0",
     "postcss-cli": "^6.1.1"
   },
-  "browserslist": [
-    ">0.5%",
-    "not op_mini all",
-    "not android < 4.4.4"
-  ],
   "scripts": {
     "scss": "node-sass --omit-source-map-url --output-style compressed reboot.scss reboot.css",
     "autoprefixer": "postcss --use autoprefixer --replace ./reboot.css --no-map",
