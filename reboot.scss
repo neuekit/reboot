@@ -2,7 +2,7 @@
 
    #REBOOT BROWSER STYLES
 
-   - Version:      1.6
+   - Version:      1.9
    - Author:       Creative Little Dots
    - Site:         http://creativelittle.uk/reboot
    - Copyright:    2019, Creative Little Dots
@@ -97,16 +97,12 @@ dialog {
   border: solid;
   color: black;
   display: block;
-  height: -moz-fit-content;
-  height: -webkit-fit-content;
   height: fit-content;
   left: 0;
   margin: auto;
   padding: 1em;
   position: absolute;
   right: 0;
-  width: -moz-fit-content;
-  width: -webkit-fit-content;
   width: fit-content;
 }
 
@@ -169,8 +165,9 @@ samp {
 \*----------------------------------------------------------------------------*/
 
 hr {
+   box-sizing: content-box;   /* 1 */
    height: 0;                 /* 1 */
-   overflow: visible;         /* 2 */
+   overflow: visible;         /* 3 */
 }
 
 
@@ -445,12 +442,13 @@ textarea,
 
 
 /*----------------------------------------------------------------------------*\
-   1. Remove the default styling in all browsers (opinionated).
+   1. Change the font styles in all browsers.
    2. Remove the margin in Firefox and Safari.
 \*----------------------------------------------------------------------------*/
 
 button,
 input,
+optgroup,
 select,
 textarea {
    background-color: transparent;  /* 1 */
@@ -487,15 +485,16 @@ select { /* 1 */
 
 
 /*----------------------------------------------------------------------------*\
-   Correct the inability to style clickable types in iOS and Safari.
+   1. Add cursor pointer by default (opinionated).
+   2. Correct the inability to style clickable types in iOS and Safari.
 \*----------------------------------------------------------------------------*/
 
 button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-   cursor: pointer;
-   -webkit-appearance: button;
+   cursor: pointer;                 /* 1 */
+   -webkit-appearance: button;      /* 2 */
 }
 
 
