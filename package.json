@@ -20,7 +20,7 @@
     "sass": "^1.23.1"
   },
   "scripts": {
-    "build": "sass --no-source-map -s compressed reboot.scss reboot.css",
+    "build": "sass --no-source-map -s compressed index.scss reboot.css",
     "watch": "onchange './*.scss' -- npm run build --silent",
     "start": "npm run watch --silent"
   }
