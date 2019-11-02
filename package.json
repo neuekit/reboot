@@ -1,30 +1,26 @@
 {
-  "name": "@creativelittledots/reboot",
+  "name": "@neuekit/reboot",
   "version": "1.9.0",
   "license": "MIT",
-  "description": "The Creative Little Reboot is an opionated style reset supporting modern browsers and IE11 😒",
+  "description": "The Neue Kit Reboot is an opionated style reset supporting modern browsers and IE11 😒",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/creativelittledots/reboot.css"
+    "url": "git+https://github.com/neuekit/reboot.css"
   },
   "author": "Matt Pilott",
   "bugs": {
-    "url": "https://github.com/creativelittledots/reboot.css/issues"
+    "url": "https://github.com/neuekit/reboot.css/issues"
   },
-  "homepage": "https://github.com/creativelittledots/reboot.css#readme",
+  "homepage": "https://github.com/neuekit/reboot.css#readme",
   "publishConfig": {
     "access": "public"
   },
   "devDependencies": {
-    "autoprefixer": "^9.4.7",
     "onchange": "6.1.0",
-    "postcss-cli": "^6.1.1",
     "sass": "^1.23.1"
   },
   "scripts": {
-    "scss": "sass --no-source-map -s compressed reboot.scss reboot.css",
-    "autoprefixer": "postcss --use autoprefixer --replace ./reboot.css --no-map",
-    "build": "npm run scss --silent && npm run autoprefixer --silent",
+    "build": "sass --no-source-map -s compressed reboot.scss reboot.css",
     "watch": "onchange './*.scss' -- npm run build --silent",
     "start": "npm run watch --silent"
   }

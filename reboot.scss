@@ -1,14 +1,12 @@
 /*----------------------------------------------------------------------------*\
-
    #REBOOT BROWSER STYLES
 
    - Version:      1.9
-   - Author:       Creative Little Dots
-   - Site:         http://creativelittle.uk/reboot
-   - Copyright:    2019, Creative Little Dots
+   - Author:       Matt Pilott
+   - Site:         https://github.com/neuekit/reboot.css
+   - Copyright:    2019, Matt Pilott
    – License:      MIT | http://goo.gl/p3bexl
    - Mentions:     Based on sanitize https://goo.gl/a3DzGd
-
 \*----------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------*\
@@ -60,7 +58,7 @@ html {
    cursor: default;                    /* 1 */
    line-height: 1.5;                   /* 2 */
    tab-size: 3;                        /* 3 */
-   text-size-adjust: 100%;             /* 4 */
+   -webkit-text-size-adjust: 100%;     /* 4 */
    word-break: break-word;             /* 5 */
 }
 
