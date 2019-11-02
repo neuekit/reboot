@@ -1,6 +1,6 @@
 {
   "name": "@neuekit/reboot",
-  "version": "1.9.0",
+  "version": "1.9.1",
   "license": "MIT",
   "description": "The Neue Kit Reboot is an opionated style reset supporting modern browsers and IE11 😒",
   "repository": {
