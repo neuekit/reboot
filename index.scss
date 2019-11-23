@@ -442,6 +442,7 @@ textarea,
 /*----------------------------------------------------------------------------*\
    1. Change the font styles in all browsers.
    2. Remove the margin in Firefox and Safari.
+   3. Restore natural behaviour for inputs (opinionated)
 \*----------------------------------------------------------------------------*/
 
 button,
@@ -454,6 +455,7 @@ textarea {
    font-size: inherit;             /* 1 */
    line-height: inherit;           /* 1 */
    margin: 0;                      /* 2 */
+   word-break: normal;             /* 3 */
 }
 
 
