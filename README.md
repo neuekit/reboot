@@ -1,12 +1,10 @@
-# reboot.css
-> A modern approach to consistently styled elements.
+![Hero](https://github.com/neuekit/reboot/raw/master/hero.png)
 
-[![GitHub release](https://img.shields.io/github/release/neuekit/reboot.css.svg?style=for-the-badge)]()
-
+<p align="center">
+A modern approach to consistently styled elements! 🧑‍💻
+</p>
 
 This is the somewhat incredible readme for a little mashup of normalize, sanitize and opinion.
-
-As has been stipulated (and quite rightly so) by my good friend and colleague [@darbymanning](https://github.com/darbymanning) this reset css needs some info and steps to spin up the environment and general thinking behind the opinions.
 
 A reset in it's purest form is a way to level the browser playing field, attempting to ensure that each browser displays all standardised elements the same. Although that sounds fairly trivial, in practice it is quite time consuming and requries you to check every element in a variety of situations to ensure you haven't added strange issues.
 
@@ -22,7 +20,7 @@ To fork the project and make changes so that you can help shape reboot simply do
 
 ## Step 1:
 Download the repo or open terminal, change to the directory where your projects are stored (`cd`) and run
-`git clone https://github.com/neuekit/reboot.css.git`.
+`git clone https://github.com/neuekit/reboot.git`.
 
 ## Step 2:
 This project uses npm and can be setup using either npm or yarn. Simply `cd` into the newly created directory and run
@@ -39,3 +37,5 @@ To watch for changes manually run either `$ npm run watch`
 Although the gains aren't massive version 2 of reboot will drop support for the dreaded Internet Explorer and v1 will be maintained as the legacy branch until Mircrosoft kills it.
 
 **That's all! Feel free to scrutinise this repo and help improve it.**
+
+[![GitHub release](https://img.shields.io/github/release/neuekit/reboot.svg?style=for-the-badge)]()
