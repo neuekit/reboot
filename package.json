@@ -1,13 +1,13 @@
 {
   "name": "@neuekit/reboot",
-  "version": "1.9.3",
+  "version": "1.10.0",
   "license": "MIT",
   "description": "The Neue Kit Reboot is an opionated style reset supporting modern browsers and IE11 😒",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/neuekit/reboot"
   },
-  "author": "Matt Pilott",
+  "author": "Matt Pilott && Darby Manning && Chris Myers",
   "bugs": {
     "url": "https://github.com/neuekit/reboot.css/issues"
   },
