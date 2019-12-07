@@ -4,6 +4,8 @@
 A modern approach to consistently styled elements! 🧑‍💻
 </p>
 
+## Hello 👋,
+
 This is the somewhat incredible readme for a little mashup of normalize, sanitize and opinion.
 
 A reset in it's purest form is a way to level the browser playing field, attempting to ensure that each browser displays all standardised elements the same. Although that sounds fairly trivial, in practice it is quite time consuming and requries you to check every element in a variety of situations to ensure you haven't added strange issues.
