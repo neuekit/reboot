@@ -40,4 +40,4 @@ Although the gains aren't massive version 2 of reboot will drop support for the 
 
 **That's all! Feel free to scrutinise this repo and help improve it.**
 
-[![GitHub release](https://img.shields.io/github/release/neuekit/reboot.svg?style=for-the-badge)]()
+![GitHub release](https://img.shields.io/github/release/neuekit/reboot.svg?style=for-the-badge)
