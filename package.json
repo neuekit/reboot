@@ -5,13 +5,13 @@
   "description": "The Neue Kit Reboot is an opionated style reset supporting modern browsers and IE11 😒",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/neuekit/reboot"
+    "url": "git+https://github.com/neuekit/reboot.git"
   },
   "author": "Matt Pilott && Darby Manning && Chris Myers",
   "bugs": {
-    "url": "https://github.com/neuekit/reboot.css/issues"
+    "url": "https://github.com/neuekit/reboot/issues"
   },
-  "homepage": "https://github.com/neuekit/reboot.css#readme",
+  "homepage": "https://github.com/neuekit/reboot#readme",
   "publishConfig": {
     "access": "public"
   },
