@@ -1,7 +1,7 @@
 /*----------------------------------------------------------------------------*\
    #REBOOT BROWSER STYLES
 
-   - Version:      1.10.1
+   - Version:      1.10.2
    - Author:       Matt Pilott
    - Site:         https://github.com/neuekit/reboot
    - Copyright:    2020, Matt Pilott
@@ -257,6 +257,7 @@ select,
 textarea {
    background-color: transparent;  /* 1 */
    border-style: none;             /* 1 */
+   font-family: inherit;           /* 1 */
    font-size: inherit;             /* 1 */
    line-height: inherit;           /* 1 */
    margin: 0;                      /* 2 */
