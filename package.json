@@ -16,14 +16,11 @@
     "access": "public"
   },
   "devDependencies": {
-    "csso-cli": "^3.0.0",
     "onchange": "7.1.0",
     "sass": "1.49.0"
   },
   "scripts": {
-    "sass": "sass --no-source-map -s compressed index.scss reboot.css",
-    "clean": "csso reboot.css -o reboot.css",
-    "build": "npm run sass && npm run clean",
+    "build": "sass --no-source-map -s compressed index.scss reboot.css",
     "watch": "onchange './*.scss' -- npm run build --silent",
     "start": "npm run watch --silent"
   }
