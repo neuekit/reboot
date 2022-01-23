@@ -1,8 +1,8 @@
 {
   "name": "@neuekit/reboot",
-  "version": "1.10.2",
+  "version": "2.0.0-alpha.1",
   "license": "MIT",
-  "description": "The Neue Kit Reboot is an opionated style reset supporting modern browsers and IE11 😒",
+  "description": "Neue Kit Reboot is an opionated style reset supporting modern browsers",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/neuekit/reboot.git"
@@ -17,8 +17,8 @@
   },
   "devDependencies": {
     "csso-cli": "^3.0.0",
-    "onchange": "7.0.2",
-    "sass": "1.26.5"
+    "onchange": "7.1.0",
+    "sass": "1.49.0"
   },
   "scripts": {
     "sass": "sass --no-source-map -s compressed index.scss reboot.css",
