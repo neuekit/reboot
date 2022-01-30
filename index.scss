@@ -248,9 +248,10 @@ table {
 
 
 /*----------------------------------------------------------------------------*\
-   1. Change the font styles in all browsers.
-   2. Remove the margin in Firefox and Safari.
-   3. Restore natural behaviour for inputs (opinion)
+   1. Remove default styling (opinion).
+   2. Change the font styles in all browsers.
+   3. Remove the margin in Firefox and Safari.
+   4. Restore natural behaviour for inputs (opinion)
 \*----------------------------------------------------------------------------*/
 
 button,
@@ -258,11 +259,13 @@ input,
 optgroup,
 select,
 textarea {
-   font-family: inherit;                                                 /* 1 */
-   font-size: inherit;                                                   /* 1 */
-   line-height: inherit;                                                 /* 1 */
-   margin: 0;                                                            /* 2 */
-   word-break: normal;                                                   /* 3 */
+   background-color: transparent;                                        /* 1 */
+   border-style: none;                                                   /* 1 */
+   font-family: inherit;                                                 /* 2 */
+   font-size: inherit;                                                   /* 2 */
+   line-height: inherit;                                                 /* 2 */
+   margin: 0;                                                            /* 3 */
+   word-break: normal;                                                   /* 4 */
 }
 
 
