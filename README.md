@@ -1,4 +1,4 @@
-![Hero](https://github.com/neuekit/reboot/raw/master/hero.png)
+![Hero](https://github.com/neuekit/reboot/raw/main/hero.png)
 
 <p align="center">
 A modern approach to consistently styled elements! 🧑‍💻
