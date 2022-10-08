@@ -6,7 +6,6 @@
    - Site:         https://github.com/neuekit/reboot
    - Copyright:    2022, Matt Pilott
    – License:      MIT | http://goo.gl/p3bexl
-   - Mentions:     Based on normalize/sanitize https://goo.gl/a3DzGd
 \*----------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------*\
@@ -220,17 +219,6 @@ img {
 
 figure {
    margin: 0;
-}
-
-
-/*----------------------------------------------------------------------------*\
-   Change the fill to match the text color in all browsers (opinion).
-\*----------------------------------------------------------------------------*/
-
-svg {
-   &:not([fill]) {
-      fill: currentColor;
-   }
 }
 
 
