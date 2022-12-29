@@ -17,7 +17,7 @@
    },
    "devDependencies": {
       "onchange": "7.1.0",
-      "sass": "1.54.5"
+      "sass": "1.57.1"
    },
    "scripts": {
       "build": "sass --no-source-map -s compressed index.scss reboot.css",
