@@ -1,6 +1,6 @@
 {
    "name": "@neuekit/reboot",
-   "version": "2.0.0-beta.2",
+   "version": "2.0.0",
    "license": "MIT",
    "description": "Neue Kit Reboot is an opionated style reset supporting modern browsers",
    "repository": {
@@ -17,7 +17,7 @@
    },
    "devDependencies": {
       "onchange": "7.1.0",
-      "sass": "1.57.1"
+      "sass": "1.69.3"
    },
    "scripts": {
       "build": "sass --no-source-map -s compressed index.scss reboot.css",
