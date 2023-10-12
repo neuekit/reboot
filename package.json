@@ -1,30 +1,27 @@
 {
-  "name": "@neuekit/reboot",
-  "version": "1.10.2",
-  "license": "MIT",
-  "description": "The Neue Kit Reboot is an opionated style reset supporting modern browsers and IE11 😒",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/neuekit/reboot.git"
-  },
-  "author": "Matt Pilott && Darby Manning && Chris Myers",
-  "bugs": {
-    "url": "https://github.com/neuekit/reboot/issues"
-  },
-  "homepage": "https://github.com/neuekit/reboot#readme",
-  "publishConfig": {
-    "access": "public"
-  },
-  "devDependencies": {
-    "csso-cli": "^3.0.0",
-    "onchange": "7.0.2",
-    "sass": "1.26.5"
-  },
-  "scripts": {
-    "sass": "sass --no-source-map -s compressed index.scss reboot.css",
-    "clean": "csso reboot.css -o reboot.css",
-    "build": "npm run sass && npm run clean",
-    "watch": "onchange './*.scss' -- npm run build --silent",
-    "start": "npm run watch --silent"
-  }
+   "name": "@neuekit/reboot",
+   "version": "2.0.0",
+   "license": "MIT",
+   "description": "Neue Kit Reboot is an opionated style reset supporting modern browsers",
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/neuekit/reboot.git"
+   },
+   "author": "Matt Pilott && Darby Manning && Chris Myers",
+   "bugs": {
+      "url": "https://github.com/neuekit/reboot/issues"
+   },
+   "homepage": "https://github.com/neuekit/reboot#readme",
+   "publishConfig": {
+      "access": "public"
+   },
+   "devDependencies": {
+      "onchange": "7.1.0",
+      "sass": "1.69.3"
+   },
+   "scripts": {
+      "build": "sass --no-source-map -s compressed index.scss reboot.css",
+      "watch": "onchange './*.scss' -- npm run build --silent",
+      "start": "npm run watch --silent"
+   }
 }

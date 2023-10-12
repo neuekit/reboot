@@ -1,31 +1,27 @@
 /*----------------------------------------------------------------------------*\
    #REBOOT BROWSER STYLES
 
-   - Version:      1.10.2
-   - Author:       Matt Pilott
+   - Version:      2.0.0
+   - Author:       Matt Pilott && Darby Manning && Chris Myers
    - Site:         https://github.com/neuekit/reboot
-   - Copyright:    2020, Matt Pilott
+   - Copyright:    2022, Matt Pilott
    – License:      MIT | http://goo.gl/p3bexl
-   - Mentions:     Based on normalize/sanitize https://goo.gl/a3DzGd
 \*----------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------*\
-   1. Set background size to cover in all browsers (opinion).
-   2. Remove repeating backgrounds in all browsers (opinion).
-   3. Set background position to center apart from to pseudos (opinion).
+   1. Remove repeating backgrounds in all browsers (opinion).
+   2. Set background position to center apart from to pseudos (opinion).
+   3. Set background size to cover in all browsers (opinion).
    4. Add box sizing in all browsers (opinion).
    5. Add relative positioning (opinion).
 \*----------------------------------------------------------------------------*/
 
-* {
-   background-size: cover;                                               /* 1 */
-}
-
 *,
 ::before,
 ::after {
-   background-repeat: no-repeat;                                         /* 2 */
-   background-position: center;                                          /* 3 */
+   background-repeat: no-repeat;                                         /* 1 */
+   background-position: center;                                          /* 2 */
+   background-size: cover;                                               /* 3 */
    box-sizing: border-box;                                               /* 4 */
    position: relative;                                                   /* 5 */
 }
@@ -63,11 +59,21 @@ html {
 
 
 /*----------------------------------------------------------------------------*\
-   Remove margin in all browsers. (opinion)
+   1. Set default font stack to leverage systom font (opinion)
+   2. Remove margin in all browsers. (opinion)
 \*----------------------------------------------------------------------------*/
 
 body {
-   margin: 0;
+   font-family: system-ui,
+                -apple-system,
+                'Segoe UI',
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif,
+                'Apple Color Emoji',
+                'Segoe UI Emoji';                                        /* 1 */
+   margin: 0;                                                            /* 2 */
 }
 
 
@@ -83,41 +89,13 @@ h1 {
 
 
 /*----------------------------------------------------------------------------*\
-   Remove the margin on nested lists in Chrome, Edge, IE, and Safari.
-\*----------------------------------------------------------------------------*/
-
-dl dl,
-dl ol,
-dl ul,
-ol dl,
-ul dl,
-ol ol,
-ol ul,
-ul ol,
-ul ul {
-  margin: 0;
-}
-
-
-/*----------------------------------------------------------------------------*\
-   1. Add the correct box sizing in Firefox.
-   2. Show the overflow in Edge and IE.
+   1. Correct the inheritance of border color in Firefox.
+   2. Add the correct box sizing in Firefox.
 \*----------------------------------------------------------------------------*/
 
 hr {
-   height: 0;                 /* 1 */
-   overflow: visible;         /* 2 */
-}
-
-
-/*----------------------------------------------------------------------------*\
-   Render the `main` element consistently in IE.
-   Add the correct display in Edge, IE 10+, and Firefox.
-\*----------------------------------------------------------------------------*/
-
-main,
-details {
-   display: block;
+   color: inherit;                                                       /* 1 */
+   height: 0;                                                            /* 2 */
 }
 
 
@@ -133,7 +111,7 @@ nav ul {
 
 
 /*----------------------------------------------------------------------------*\
-   1. Correct font sizing inheritance and scaling in all browsers.
+   1. Set default font stack to leverage systom font (opinion)
    2. Correct the odd `em` font sizing in all browsers.
 \*----------------------------------------------------------------------------*/
 
@@ -141,17 +119,21 @@ code,
 kbd,
 pre,
 samp {
-   font-family: monospace, monospace;  /* 1 */
-   font-size: 1em;                     /* 2 */
+   font-family: ui-monospace,
+                SFMono-Regular,
+                Consolas,
+                'Liberation Mono',
+                Menlo,
+                monospace;                                               /* 1 */
+   font-size: 1em;                                                       /* 2 */
 }
 
 
 /*----------------------------------------------------------------------------*\
-   Add the correct text decoration in Edge, IE, Opera, and Safari.
+   Add the correct text decoration in Edge, Opera, and Safari.
 \*----------------------------------------------------------------------------*/
 
 abbr[title] {
-   text-decoration: underline;
    text-decoration: underline dotted;
 }
 
@@ -172,6 +154,27 @@ strong {
 
 small {
    font-size: 83.3333%;
+}
+
+
+/*----------------------------------------------------------------------------*\
+   Stop 'sub' and 'sup' elements affecting line height in all browsers.
+\*----------------------------------------------------------------------------*/
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
 }
 
 
@@ -220,34 +223,23 @@ figure {
 
 
 /*----------------------------------------------------------------------------*\
-   1. Change the fill to match the text color in all browsers (opinion).
-   2. Hide the overflow in IE.
-\*----------------------------------------------------------------------------*/
-
-svg {
-   &:not([fill]) {
-      fill: currentColor; /* 1 */
-   }
-
-   &:not(:root) {
-      overflow: hidden; /* 2 */
-   }
-}
-
-
-/*----------------------------------------------------------------------------*\
-   Remove border spacing in all browsers (opinion).
+   1. Remove border spacing in all browsers (opinion).
+   2. Correct table border color inheritance
+   3. Remove text indentation from table contents
 \*----------------------------------------------------------------------------*/
 
 table {
-   border-collapse: collapse;
+   border-collapse: collapse;                                            /* 1 */
+   border-color: inherit;                                                /* 2 */
+   text-indent: 0;                                                       /* 3 */
 }
 
 
 /*----------------------------------------------------------------------------*\
-   1. Change the font styles in all browsers.
-   2. Remove the margin in Firefox and Safari.
-   3. Restore natural behaviour for inputs (opinion)
+   1. Remove default styling (opinion).
+   2. Change the font styles in all browsers.
+   3. Remove the margin in Firefox and Safari.
+   4. Restore natural behaviour for inputs (opinion)
 \*----------------------------------------------------------------------------*/
 
 button,
@@ -255,36 +247,23 @@ input,
 optgroup,
 select,
 textarea {
-   background-color: transparent;  /* 1 */
-   border-style: none;             /* 1 */
-   font-family: inherit;           /* 1 */
-   font-size: inherit;             /* 1 */
-   line-height: inherit;           /* 1 */
-   margin: 0;                      /* 2 */
-   word-break: normal;             /* 3 */
+   background-color: transparent;                                        /* 1 */
+   border-style: none;                                                   /* 1 */
+   font-family: inherit;                                                 /* 2 */
+   font-size: inherit;                                                   /* 2 */
+   line-height: inherit;                                                 /* 2 */
+   margin: 0;                                                            /* 3 */
+   word-break: normal;                                                   /* 4 */
 }
 
 
 /*----------------------------------------------------------------------------*\
-   Correct the overflow in IE.
-   1. Correct the overflow in Edge
-\*----------------------------------------------------------------------------*/
-
-button,
-input {
-   color: inherit; /* 1 */
-   overflow: visible; /* 1 */
-}
-
-
-/*----------------------------------------------------------------------------*\
-   Remove the inheritance in Edge, Firefox, and IE.
-   1. Remove the inheritance in Firefox.
+   Remove the inheritance in Edge, Firefox.
 \*----------------------------------------------------------------------------*/
 
 button,
 select {
-   text-transform: none; /* 1 */
+   text-transform: none; 
 }
 
 
@@ -314,40 +293,30 @@ fieldset {
 
 
 /*----------------------------------------------------------------------------*\
-   1. Correct the text wrapping in Edge and IE.
-   2. Remove the padding so developers are not caught out when they zero out
+   Remove the padding so developers are not caught out when they zero out
    `fieldset` elements in all browsers.
-   3. Correct the color inheritance from `fieldset` elements in IE.
 \*----------------------------------------------------------------------------*/
 
 legend {
-   color: inherit;         /* 3 */
-   display: table;         /* 1 */
-   max-width: 100%;        /* 1 */
-   padding: 0;             /* 2 */
-   white-space: normal;    /* 1 */
+   padding: 0;
 }
 
 
 /*----------------------------------------------------------------------------*\
-   1. Add the correct display in Edge 18- and IE.
-   2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   Add the correct vertical alignment in Chrome, Firefox, and Opera.
 \*----------------------------------------------------------------------------*/
 
 progress {
-   display: inline-block; /* 1 */
-   vertical-align: baseline; /* 2 */
+   vertical-align: baseline;
 }
 
 
 /*----------------------------------------------------------------------------*\
-   1. Remove the vertical scrollbar in IE 10+.
-   2. Change the resize direction on textareas in all browsers (opinion).
+   Change the resize direction on textareas in all browsers (opinion).
 \*----------------------------------------------------------------------------*/
 
 textarea {
-   overflow: auto;     /* 1 */
-   resize: vertical;   /* 2 */
+   resize: vertical;
 }
 
 
@@ -369,16 +338,6 @@ textarea {
 ::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button {
    height: auto;
-}
-
-
-/*----------------------------------------------------------------------------*\
-   Correct the text style on placeholders in Chrome, Edge, and Safari.
-\*----------------------------------------------------------------------------*/
-
-::-webkit-input-placeholder {
-   color: inherit;
-   opacity: 0.5;
 }
 
 
@@ -431,115 +390,10 @@ textarea {
 
 
 /*----------------------------------------------------------------------------*\
-   Add the correct styles in Edge 18-, IE, and Safari.
-\*----------------------------------------------------------------------------*/
-
-dialog {
-   background-color: white;
-   border: solid;
-   color: black;
-   display: block;
-   height: -moz-fit-content;
-   height: -webkit-fit-content;
-   height: fit-content;
-   left: 0;
-   margin: auto;
-   padding: 1em;
-   position: absolute;
-   right: 0;
-   width: -moz-fit-content;
-   width: -webkit-fit-content;
-   width: fit-content;
-
-   &:not([open]) {
-      display: none;
-   }
-}
-
-
-/*----------------------------------------------------------------------------*\
    Add the correct display in all browsers.
 \*----------------------------------------------------------------------------*/
 
 summary {
    display: list-item;
-}
-
-
-/*----------------------------------------------------------------------------*\
-   Add the correct display in IE.
-\*----------------------------------------------------------------------------*/
-
-template {
-   display: none;
-}
-
-
-/*----------------------------------------------------------------------------*\
-   Remove the tapping delay on clickable elements in all browsers (opinion).
-\*----------------------------------------------------------------------------*/
-
-a,
-area,
-button,
-input,
-label,
-select,
-summary,
-textarea,
-[tabindex] {
-   touch-action: manipulation;
-}
-
-
-/*----------------------------------------------------------------------------*\
-   Change the cursor on busy elements (opinion).
-\*----------------------------------------------------------------------------*/
-
-[aria-busy="true"] {
-   cursor: progress;
-}
-
-
-/*----------------------------------------------------------------------------*\
-   Change the cursor on control elements (opinion).
-\*----------------------------------------------------------------------------*/
-
-[aria-controls] {
-   cursor: pointer;
-}
-
-
-/*----------------------------------------------------------------------------*\
-   Change the cursor on disabled, not-editable, or otherwise inoperable
-   elements (opinion).
-\*----------------------------------------------------------------------------*/
-
-[aria-disabled="true"],
-[disabled] {
-   cursor: not-allowed;
-}
-
-
-/*----------------------------------------------------------------------------*\
-   Remove the outline when hovering in all browsers (opinion/m).
-\*----------------------------------------------------------------------------*/
-
-a:hover {
-   outline-width: 0;
-}
-
-
-/*----------------------------------------------------------------------------*\
-   Change the display on visually hidden accessible elements (opinion).
-\*----------------------------------------------------------------------------*/
-
-[aria-hidden="false"][hidden] {
-   display: initial;
-
-   &:not(:focus) {
-      clip: rect(0, 0, 0, 0);
-      position: absolute;
-   }
 }
 

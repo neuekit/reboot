@@ -8,6 +8,7 @@ A modern approach to consistently styled elements! 🧑‍💻
 
 ![GitHub release](https://img.shields.io/github/release/neuekit/reboot.svg?style=for-the-badge)
 
+### M2 has dropped support for IE11 💪
 This is the somewhat incredible readme for a little mashup of normalize, sanitize and opinion.
 
 A reset in it's purest form is a way to level the browser playing field, attempting to ensure that each browser displays all standardised elements the same. Although that sounds fairly trivial, in practice it is quite time consuming and requries you to check every element in a variety of situations to ensure you haven't added strange issues.
@@ -38,6 +39,6 @@ To build the project manually run either `$ npm run build`
 To watch for changes manually run either `$ npm run watch`
 
 ## Future
-Although the gains aren't massive version 2 of reboot will drop support for the dreaded Internet Explorer and v1 will be maintained as the legacy branch until Mircrosoft kills it.
+M3 (version 3) will shift to use the super low specificity pseudo selector `:where` and drop support for any browsers that do not support it (classic Edge, Safari 13 etc.)
 
 **That's all! Feel free to scrutinise this repo and help improve it.**
